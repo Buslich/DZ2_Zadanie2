@@ -1,20 +1,20 @@
 public class Main {
     public static void main(String[] args) {
         // переменные для начального счета
-        int изначальный = 100; // изначальный баланс пользователя
-        int суммапополнения = 2200; // сумма, которую он пополняет
+        int initialBalance = 50; // изначальный баланс пользователя
+        int replenishment = 200; // сумма, которую он пополняет
 
         // переменные для бонуса и итогового счета
         int bonus = 0;
-        int финальныйбаланс = изначальный + суммапополнения;
+        int finalBalance = initialBalance + replenishment;
 
         // проверяем, превышает ли сумма порог в 1000
-        if (суммапополнения > 1000) {
-            bonus = суммапополнения / 100;
+        if (initialBalance > 1000) {
+            bonus = replenishment / 100;
         }
 
         // выводим итоговый счет и бонусные рубли
-        System.out.println("Итоговый счет: " + финальныйбаланс + " рублей");
+        System.out.println("Итоговый счет: " + finalBalance + " рублей");
         System.out.println("Бонусные рубли: " + bonus + " рублей");
     }
 }
